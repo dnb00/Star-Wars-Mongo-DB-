@@ -1,0 +1,24 @@
+{
+  "name": "teste-emiolo-back-end",
+  "version": "1.0.0",
+  "description": "Back end vaga fullstack",
+  "main": "index.js",
+  "live": "nodemon server.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js"
+  },
+  "author": "Daniel Batista",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.3",
+    "moment": "^2.29.1",
+    "mongodb": "^3.1.13"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
