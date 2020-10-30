@@ -4,9 +4,10 @@
   "description": "Back end vaga fullstack",
   "main": "index.js",
   "live": "nodemon server.js",
+  "type": "module",
   "scripts": {
-    "start": "node server/index.js",
-    "dev": "nodemon server/index.js"
+    "start": "node src/server/index.js",
+    "dev": "nodemon src/server/index.js"
   },
   "author": "Daniel Batista",
   "license": "MIT",
