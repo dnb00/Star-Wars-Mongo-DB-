@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 app.use("/api/swapi", routes.swapi);
-app.use("/api/user", routes.user);
+app.use("/api/users", routes.user);
 
 MongoClient.connect(
   databaseOptions.url,
