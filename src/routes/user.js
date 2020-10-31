@@ -33,6 +33,16 @@ router.post("/create", async (request, response) => {
 
     await user.findOne({ userId }, function (err, findUser) {
       if (findUser) {
+        log(
+          request,
+          userId,
+          userName,
+          loginType,
+          request.originalUrl,
+          "POST",
+          request.body,
+          { message: "Login" }
+        );
         return response.status(200).json({ message: "Usuário já cadastrado." });
       } else {
         user.insertOne({
